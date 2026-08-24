@@ -47,7 +47,6 @@ The VM can be controlled via HTTP requests once the Spring Boot application is r
 
 ### Prerequisites
 * Java 17 or higher
-* Maven
 
 ### Installation & Run
 1. Clone the repository:
