@@ -52,4 +52,4 @@ The VM can be controlled via HTTP requests once the Spring Boot application is r
 ### Installation & Run
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/yourusername/J-VM-Emulator.git](https://github.com/yourusername/J-VM-Emulator.git)
+   git clone [[https://github.com/HarshLogic/Custom-Virtual-Machine-OS-Emulator.git](https://github.com/HarshLogic/Custom-Virtual-Machine-OS-Emulator.git)]
