@@ -4,7 +4,6 @@
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen.svg)
 ![Architecture](https://img.shields.io/badge/Architecture-System%20Design-blue.svg)
 ![Data Structures](https://img.shields.io/badge/Data%20Structures-O(1)%20LRU-purple.svg?style=flat)
-
 ## 📌 Overview
 J-VM is a custom Virtual Machine and Operating System Memory Simulator built entirely from scratch in Java. Instead of relying on the host OS for memory management, this project implements a complete **Fetch-Decode-Execute CPU cycle**, a **Memory Management Unit (MMU)**, and an **LRU-based Paging System** to handle virtual-to-physical address translation.
 
@@ -49,6 +48,9 @@ The CPU currently understands the following custom assembly instructions:
 | `HALT` | None | Safely stops the Virtual Machine execution loop. |
 
 ---
+## System Desgin
+![System Desgin (LLD)](images/screenshot.png)
+
 
 ## 🔌 REST API Endpoints
 
