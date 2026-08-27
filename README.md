@@ -49,7 +49,7 @@ The CPU currently understands the following custom assembly instructions:
 
 ---
 ## System Desgin
-![System Desgin (LLD)](images/screenshot.png)
+![System Desgin (LLD)](Custom Virtual Machine & OS Emulator.drawio.png)
 
 
 ## 🔌 REST API Endpoints
