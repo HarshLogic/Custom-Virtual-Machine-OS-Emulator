@@ -3,6 +3,7 @@
 ![Java](https://img.shields.io/badge/Java-21-orange.svg)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen.svg)
 ![Architecture](https://img.shields.io/badge/Architecture-System%20Design-blue.svg)
+![Data Structures](https://img.shields.io/badge/Data%20Structures-O(1)%20LRU-purple.svg?style=flat)
 
 ## 📌 Overview
 J-VM is a custom Virtual Machine and Operating System Memory Simulator built entirely from scratch in Java. Instead of relying on the host OS for memory management, this project implements a complete **Fetch-Decode-Execute CPU cycle**, a **Memory Management Unit (MMU)**, and an **LRU-based Paging System** to handle virtual-to-physical address translation.
@@ -29,6 +30,23 @@ The project follows a modular, enterprise-grade directory structure:
 | **Memory** | `memory` | Houses the `MMU`, `PageTable`, and physical memory arrays. |
 | **Caching** | `replacement` | Contains the Strategy Pattern implementation for `LRUSwapper`. |
 | **Storage** | `storage` | Manages raw binary I/O to the mock `.dat` hard drive. |
+
+---
+## 📜 Instruction Set Architecture (ISA)
+
+The CPU currently understands the following custom assembly instructions:
+
+| Opcode | Argument | Description |
+| :--- | :--- | :--- |
+| `PUSH` | `[int]` | Pushes a number onto the execution stack. |
+| `POP` | None | Removes the top number from the stack. |
+| `ADD` / `SUB` | None | Pops the top two numbers, performs math, pushes result. |
+| `MUL` / `DIV` | None | Pops the top two numbers, performs math, pushes result. |
+| `LOAD` | `[address]`| Reads data from the Virtual Address and pushes it to stack. |
+| `STORE` | `[address]`| Pops data from the stack and writes it to the Virtual Address. |
+| `JMP` | `[line]` | Unconditional jump to a specific line number (Program Counter). |
+| `JZ` | `[line]` | Pops the top of the stack. If it is `0`, jumps to the line number. |
+| `HALT` | None | Safely stops the Virtual Machine execution loop. |
 
 ---
 
